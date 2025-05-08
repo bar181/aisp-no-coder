@@ -1,0 +1,7 @@
+name: FleetTrack
+entities:
+  - Vehicle
+  - Driver
+features:
+  - CRUD Vehicle
+  - CRUD Driver

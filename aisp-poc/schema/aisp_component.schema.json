@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["id", "json_spec", "aisp"],
+  "properties": {
+    "id":   { "type": "string" },
+    "json_spec": {
+      "type": "object",
+      "required": ["Functionality_ID", "Functionality_Name", "Version", "Status"],
+      "properties": {
+        "Functionality_ID":   { "type": "string" },
+        "Functionality_Name": { "type": "string" },
+        "Version":            { "type": "string" },
+        "Status":             { "type": "string" }
+      }
+    },
+    "aisp": { "type": "string", "pattern": "^Ω\\.entity:" }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "{{ component_id }}",
+  "json_spec": {
+    "Template_Version": "0.1",
+    "Functionality_ID": "{{ component_id }}",
+    "Functionality_Name": "CRUD {{ entity }}",
+    "Version": "0.1.0",
+    "Status": "ready",
+    "Short_Description": "Auto-generated CRUD endpoints for {{ entity }}.",
+    "Input_Data": {
+      "props": [
+        { "name": "id", "type": "int", "required": false, "description": "Primary key" },
+        { "name": "name", "type": "str", "required": true, "description": "{{ entity }} name" }
+      ]
+    }
+  },
+  "aisp": "Ω.entity:{{ entity }} api {id:{{ component_id }}}\nΨ.param.id int optional\nΨ.param.name str required\nΓ.requirement[1]:create read update delete\nΛ.test:health_check\n"
+}
